@@ -1,0 +1,16 @@
+runmode: debug
+
+server:
+  port: 8086
+
+# MySQL 数据库配置
+mySql:
+  host: localhost
+  port: 3306             # 机器 IP 和端口
+  username: root                # 用户名
+  password: "000000"             # 用户密码
+  database: omaha               #  系统所用的数据库名
+  max_idle_connections: 10     # 最大空闲连接数
+  max_open_connections: 100     # 最大打开的连接数
+  max_connection_lifetime: 10 # 空闲连接最大存活时间 单位s
+  log_level: 4                  # GORM log level, 1: silent, 2:error, 3:warn, 4:info
